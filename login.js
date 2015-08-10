@@ -34,7 +34,7 @@
 			}
 		},
 	"net": {
-			ajax_url: "http://net.tsinghua.edu.cn/do_login.php",
+			ajax_url: "https://net.tsinghua.edu.cn/do_login.php",
 			url: "http://net.tsinghua.edu.cn/",
 			method: "post",
 			param: {
@@ -49,7 +49,7 @@
 			}
 		},
 	"usereg": {
-			ajax_url: "https://usereg.tsinghua.edu.cn/do.php",
+			ajax_url: "http://usereg.tsinghua.edu.cn/do.php",
 			url: "http://usereg.tsinghua.edu.cn/",
 			method: "post",
 			param: {
