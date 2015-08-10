@@ -34,15 +34,18 @@
 			}
 		},
 	"net": {
-			ajax_url: "http://net.tsinghua.edu.cn/cgi-bin/do_login",
+			ajax_url: "http://net.tsinghua.edu.cn/do_login.php",
 			url: "http://net.tsinghua.edu.cn/",
 			method: "post",
 			param: {
 				username: ParamType.$user_id,
-				password: ParamType.$password_md5,
-				drop: 0,
-				type: 1,
-				n: 100,
+				password: function(){return '{MD5_HEX}'+(ParamType.$password_md5)()},
+				action: 'login',
+				ac_id: 1,
+// 				is_pad: 2,
+// 				n: 100,
+// 				type: 1,
+// 				drop: 0,
 			}
 		},
 	"usereg": {
