@@ -15,12 +15,12 @@
 	}
 	var LoginParam = {
 	"learn": {
-			url: "https://learn.tsinghua.edu.cn/MultiLanguage/lesson/teacher/loginteacher.jsp",
+			url: "https://id.tsinghua.edu.cn/do/off/ui/auth/login/post/bb5df85216504820be7bba2b0ae1535b/0?/login.do",
 			method: "post",
 			param: {
-				userid: ParamType.$school_id,
-				userpass: ParamType.$password,
-				submit1: "登录"
+				i_user: ParamType.$school_id,
+				i_pass: ParamType.$password,
+				atOnce: "true"
 			}
 		},
 	"info": {
@@ -35,7 +35,7 @@
 		},
 	"net": {
 			ajax_url: "https://net.tsinghua.edu.cn/do_login.php",
-			url: "http://net.tsinghua.edu.cn/",
+			url: "https://net.tsinghua.edu.cn/",
 			method: "post",
 			param: {
 				username: ParamType.$user_id,
@@ -50,7 +50,7 @@
 		},
 	"usereg": {
 			ajax_url: "http://usereg.tsinghua.edu.cn/do.php",
-			url: "http://usereg.tsinghua.edu.cn/",
+			url: "https://usereg.tsinghua.edu.cn/",
 			method: "post",
 			param: {
 				action:"login",
